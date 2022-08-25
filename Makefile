@@ -5,5 +5,7 @@ DEPS = birthday.h
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-birthday-cake: main.cpp
-	$(CC) -o birthday-cake main.cpp
+bake: src/main.cpp
+	$(CC) -o birthday-cake src/main.cpp
+install: birthday-cake
+	mv birthday-cake /usr/bin/birthday-cake
