@@ -1,5 +1,8 @@
 #include <birthday.h>
 
+using namespace birthday;
+
 int main() {
-  birthday::cake();
+  linux::cake();
+  return 0;
 }
